@@ -1,0 +1,218 @@
+<html>
+    <head>
+        <title>NIMCET 2018:Dummy Design by Andi</title>
+
+        <link rel="icon" href="./images/favicon.ico">
+        <link rel="stylesheet" href="home_style.css" >
+        <script src="home_script.js" ></script> 
+        <style>
+        #reg
+        {
+         margin: auto;
+        width: 50%;
+        border: 1px solid #31708f;
+        margin-top:3%;
+        background-color:#ecf0f1;
+        }
+        #reg table
+        {
+         margin: auto;
+         text-align: right;
+        }
+        input[type=password],[type=email],input[type=text],input[type=number],input[type=tel],select
+{
+    height:30;
+    width: 120%;
+    padding: 3%;
+}
+        </style>
+    </head>
+    <body onload="dt()">
+        <!-----------------------------TOP BAR------------------------------------------------>
+       <div id="top_bar"> 
+           
+           <span id="tdte" > </span> 
+       
+        <span style="float: right;margin-right: 5%;"> For Admission Year
+        <span style="background-color:red;margin-left: 0%;padding-right: 1%;">2018</span></span>
+       </div>
+       <!-----------------------------------HEADER ----------------------------------------------->
+       <header>
+            <h1>NIMCET - 2018</h1>
+            <br/>
+            <p>NIT MCA COMMON Entrance Test</p>
+       </header>
+       <!-----------------------------------------Logo_Bar-------------------------------------------->
+        <div id="logo_bar"> 
+            <div id="engl" >National Institute Of Technology <br>Karnataka, Surathkal</div>
+            <div id="pic">
+                Organizing Institute
+                <br><br>
+                <img src="./images/nitk-t-logo.png" alt="NIT Surathkal Logo" >
+            </div>
+            <div id="hind">NIMCET HELPLINE NO<br>026-8975878</div>
+            <div style="clear:both"></div>
+        </div>
+        <!-------------------------------------Navigation Bar----------------------------------------->
+        <nav>
+            
+                <a href="index.html"> <button>  Home</button></a>
+                <a href="participating.html" > <button>  Participating NITs</button></a>
+                <a href="./importantdate.html" ><button>  Important Dates</button></a>
+                <a href="./Documents/Information_Brouchre.pdf" target="_blank"> <button>  Information Brochure</button></a>
+                <a href="./Documents/Information_Brouchre.pdf" target="_blank" download > <button>  Information Brochure</button></a>
+                <a href="./Documents/Seat_Matrix.pdf" target="_blank" download > <button>  Seat Matrix</button></a>
+            
+        </nav>
+        <div id="reg">
+            <br>
+            <h1 style="text-align:center;color:#BC70A4;">Registration Form</h1>
+            <form action="registration.php" method="POST">
+                <br>
+                <br>
+                    <table>
+                        <tr>
+                            <td>First Name&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                            <td><input type="text" name="fname" size="25" placeholder="First Name" required></td>
+                        </tr>
+                        <tr>
+                            <td>Last Name&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                            <td><input type="text" name="lname" size="25" placeholder="Last Name" required></td>
+                        </tr>
+                        <tr>
+                            <td>Email Id&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                            <td><input type="email" name="email" size="25" required placeholder="Email Id"></td>
+                        </tr>
+                        <tr>
+                            <td>Mobile No.&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                            <td><input type="tel" name="phn" size="25" required placeholder="Mobile Number"></td>
+                        </tr>
+                        <tr>
+                                <td>Password&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                                <td><input type="password" id="pwd1" name="pwd" size="25" required placeholder="Enter Password"></td>
+                            </tr>
+                            <tr>
+                                <td>Confirm Password&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                                <td><input type="password" id="pwd2" name="cpwd" size="25" required placeholder="Confirm Password"></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>
+                                        <p id="pwdmsg" style="color:red;font-size: 12px;font-weight: 800;"></p>
+                                </td>
+                            </tr>
+                        <tr>
+                            <td>State&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                            <td>
+                                    <select name="state">
+                                            <option value="">Select State</option>
+                                            <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                                            <option value="Andhra Pradesh">Andhra Pradesh</option>
+                                            <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                                            <option value="Assam">Assam</option>
+                                            <option value="Bihar">Bihar</option>
+                                            <option value="Chandigarh">Chandigarh</option>
+                                            <option value="Chhattisgarh">Chhattisgarh</option>
+                                            <option value="Dadra and Nagar Haveli">Dadra and Nagar Haveli</option>
+                                            <option value="Daman and Diu">Daman and Diu</option>
+                                            <option value="Delhi">Delhi</option>
+                                            <option value="Goa">Goa</option>
+                                            <option value="Gujarat">Gujarat</option>
+                                            <option value="Haryana">Haryana</option>
+                                            <option value="Himachal Pradesh">Himachal Pradesh</option>
+                                            <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                                            <option value="Jharkhand">Jharkhand</option>
+                                            <option value="Karnataka">Karnataka</option>
+                                            <option value="Kerala">Kerala</option>
+                                            <option value="Lakshadweep">Lakshadweep</option>
+                                            <option value="Madhya Pradesh">Madhya Pradesh</option>
+                                            <option value="Maharashtra">Maharashtra</option>
+                                            <option value="Manipur">Manipur</option>
+                                            <option value="Meghalaya">Meghalaya</option>
+                                            <option value="Mizoram">Mizoram</option>
+                                            <option value="Nagaland">Nagaland</option>
+                                            <option value="Orissa">Orissa</option>
+                                            <option value="Pondicherry">Pondicherry</option>
+                                            <option value="Punjab">Punjab</option>
+                                            <option value="Rajasthan">Rajasthan</option>
+                                            <option value="Sikkim">Sikkim</option>
+                                            <option value="Tamil Nadu">Tamil Nadu</option>
+                                            <option value="Tripura">Tripura</option>
+                                            <option value="Uttaranchal">Uttaranchal</option>
+                                            <option value="Uttar Pradesh">Uttar Pradesh</option>
+                                            <option value="West Bengal">West Bengal</option>
+                                            </select>
+                            </td>
+                        </tr>
+                        <tr>
+                                <td>College&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                                <td><input type="text" name="college" required size="25" placeholder="College Name"></td>
+                            </tr>
+                        <tr>
+                            <td>Degree&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                            <td>
+                                <select name="degree">
+                                    <option value="" >Select Degree</option>
+                                    <option value="BCA" >BCA</option>
+                                    <option value="B.Sc Comp. Science" >B.Sc Comp. Science</option>
+                                    <option value="B.Tech" >B.Tech</option>
+                                    <option value="B.Sc IT" >B.Sc IT</option>
+                                    <option value="DCA" >DCA</option>
+                                    <option value="other">OTHER</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Percentage&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                            <td><input type="number" placeholder="Percentage" name="prcnt" required  ></td>
+                        </tr>
+                       
+                    </table>
+                    
+                    <br><br>
+                           <input type="reset" value="Cancel" style="background:#db6851;margin-left: 30%;color:white;font-size:14px;font-weight: 600;padding: 2%;border: none;outline: none;cursor: pointer;">
+                            <input type="submit" id="crt" value="Register" style="background:#5cb85c;margin-left: 30%;color:white;font-size:14px;font-weight: 600;padding: 2%;border: none;outline: none;cursor: pointer;">
+                  
+            </form>
+            <br><br>
+        </div>
+        <!------------------------------------Icon Scalinng Bar------------------------------------->
+        <div id="scale_icon">
+            <img src="./images/NITT.jpg" alt="NIT Tiruchirappalli" class="ic" >
+            <img src="./images/NITC.jpg" alt="NIT Calicut" class="ic"  >
+            <img src="./images/NITK.png" alt="NIT Surathkal" class="ic"  >
+            <img src="./images/NITD.png" alt="NIT Durgapur" class="ic"  >
+            <img src="./images/MANIT.png" alt="NIT Bhopal" class="ic"  >
+            <img src="./images/NITJSR.png" alt="NIT Jamshedpur" class="ic"  >
+            <img src="./images/NITA.jpg" alt="NIT Agartala" class="ic"  >
+            <img src="./images/NITW.jpg" alt="NIT Warangal" class="ic"  >
+            <img src="./images/NITR.jpg" alt="NIT Raipur" class="ic"  >
+            <img src="./images/NITKKR.png" alt="NIT Kurukshetra" class="ic"  >
+            <img src="./images/MNIT.jpg" alt="NIT Allahabad" class="ic"  >
+
+        </div>
+        <!------------------------------------------------ Footer ----------------------------------------------------->
+        <footer>
+                <div>Copyright &copy; Department of Mathematical and Computational Sciences | NITK - 2018 | #1</div>
+        </footer>
+    </body>
+    <script>
+    function passwordmsg()
+    {
+        if(pwd1.value!=pwd2.value)
+          {
+            pwdmsg.innerHTML="Password Doesn't Match";
+            //document.getElementById("crt").setAttribute("disabled","disabled");
+            document.getElementById("crt").style.backgroundColor="#cccccc";
+          }
+        else
+        {
+            pwdmsg.innerHTML="";
+            //document.getElementById("crt").setAttribute("disabled","");
+            document.getElementById("crt").style.backgroundColor="#5cb85c";
+        }
+           
+    }
+    document.getElementById("pwd2").addEventListener("blur",passwordmsg,false);
+    </script>
+</html>

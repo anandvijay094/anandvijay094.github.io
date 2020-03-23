@@ -1,0 +1,150 @@
+<html>
+    <head>
+        <title>NIMCET 2018:Dummy Design by Andi</title>
+        <link rel="icon" href="./images/favicon.ico">
+        <link rel="stylesheet" href="home_style.css" >
+	<link href="https://fonts.googleapis.com/css?family=Kalam&display=swap" rel="stylesheet">
+        <script src="home_script.js" ></script> 
+        <style>
+        input[type=text]
+        {
+            height:30;
+            width: 120%;
+            padding: 3%;
+        }
+	#hind
+	{
+	font-family: 'Kalam', cursive;
+	}
+        </style>
+    </head>
+    <body onload="dt()">
+        <!-----------------------------TOP BAR------------------------------------------------>
+       <div id="top_bar"> 
+           
+           <span id="tdte" > </span> 
+       
+        <span style="float: right;margin-right: 5%;"> For Admission Year
+        <span style="background-color:red;margin-left: 0%;padding-right: 1%;">2018</span></span>
+       </div>
+       <!-----------------------------------HEADER ----------------------------------------------->
+       <header>
+            <h1>NIMCET - 2018</h1>
+            <br/>
+            <p>NIT MCA COMMON Entrance Test</p>
+       </header>
+       <!-----------------------------------------Logo_Bar-------------------------------------------->
+        <div id="logo_bar"> 
+            <div id="engl" >National Institute Of Technology <br>Karnataka, Surathkal</div>
+            <div id="pic">
+                Organizing Institute
+                <br><br>
+                <img src="./images/nitk-t-logo.png" alt="NIT Surathkal Logo" >
+            </div>
+            <div id="hind">राष्टीय प्रौद्योगिकी संस्थान कर्णाटक ,<br>सूरतकल</div>
+            <div style="clear:both"></div>
+        </div>
+        <!-------------------------------------Navigation Bar----------------------------------------->
+        <nav>
+            
+                <a href="login.html"> <button>  Home</button></a>
+                <a href="participating.html" > <button>  Participating NITs</button></a>
+                <a href="./importantdate.html" ><button>  Important Dates</button></a>
+                <a href="./Documents/Information_Brouchre.pdf" target="_blank" download > <button>  Information Brochure</button></a>
+                <a href="./Documents/Seat_Matrix.pdf" target="_blank" download > <button>  Seat Matrix</button></a>
+                <a href="contactus.html" ><button>  Contact Us</button></a>
+            
+        </nav>
+        <!--------------------------------------Notificatior TAB ------------------------------------------>
+        <div id="notifi">
+            <div id="heading">
+                    FOR THE KIND ATTENTION OF THE CANDIDATES WHOSE REFUND IS DUE
+            </div>
+            <div id="msg">
+            We have been receiving calls regarding the refund of the part of the Counseling fees. We understand their anxiety about the refund amount. But as this is a big event involving audit clearance, it takes a while before such refunds are made. After making the refunds, we will try to either publish the list on the website or convey through email or both. Kindly bear with us for the inconvenience and the delay due to procedural aspects. 
+                <span style="color:white;font-weight: bold;">
+                       <br><br/> Dr. S. M. Hegde<br>
+                        Secretary, NIMCET-2018
+                </span>
+        </div>
+        </div>
+        <!-------------------------------------------------Boxes------------------------------------------------->
+        <div id="container">
+            <div id="infrm" >
+                <div style="width:100%;box-sizing:border-box;background:#31708f;color: white;font-size: 20px;font-weight: bold;">
+                        &nbsp;&nbsp;&nbsp;&nbsp;Important Information
+                </div>
+                <div id="infrm_bar">
+                <ol>
+                    <li> Candidate can only login through the email-id provided during registration process.</li>
+                    <li> Candidate can reset his/her password in case he/she forgets the password.</li>
+                    <li> After login, candidate can view his profile and start filling the application form.</li>
+                    <li> It is advised to read the FAQ and information brochure before filling the application form.</li>
+                </ol>
+            </div>
+            </div>
+            <div id="lgn">
+                <div style="width:100%;box-sizing:border-box;background:#31708f;color: white;font-size: 20px;font-weight: bold;">
+                            &nbsp;&nbsp;&nbsp;&nbsp;Login
+                    </div>
+                    <table style="margin-left:3%;margin-top:2%;text-align: left;">
+                        <form action="login.php" method="POST">
+                        <tr height="60px">
+                            <td width="100px" ><b>Email <span style="color:red;">*</span></b></td>
+                            <td> <input type="email" placeholder="Email" name="email" > </td>
+                        </tr>
+                        <tr >
+                            <td><b>Password <span style="color:red;">*</span></b></td>
+                            <td> <input type="password" id="pwd4" placeholder="Password" name="pwd" ></td>
+                        </tr >
+                       <tr>
+                            <td > <input id="chk" style="margin-top:20px;" type="checkbox" >&nbsp;&nbsp;Show Password</td>
+                        </tr>
+                    </table>
+                    <br/>
+                    <input type="submit" id="lgbtn" value="Log in" style="background:#5cb85c;margin-left: 30%;color:white;font-size:14px;font-weight: 600;padding: 2%;border: none;outline: none;cursor: pointer;">
+                    <a href="registration.html"><input type="button"  id="pwdbtn"  value="Registration" style="background:#db6851;margin-left: 1%;color:white;font-size:14px;font-weight: 600;padding: 2%;border: none;outline: none;cursor: pointer;"></a>
+                    <a href="forgetpassword.html"><input type="button"   value="Forgot Password" style="background:#ffd700;margin-left: 1%;color:white;font-size:14px;font-weight: 600;padding: 2%;border: none;outline: none;cursor: pointer;"></a>
+                <br><br>
+            </form>
+            </div>
+            <div style="clear:both"></div>
+        </div>
+        <!------------------------------------ About ----------------------------------------------------------->
+        <div id="about" >
+            <h1 style="color:grey;font-size:160%;">About NIMCET</h1>
+            <p>
+            National Institutes of Technology (NITs) are Institutions of National Importance Under MHRD, Govt. of India. The NIMCET is a Common Entrance National Level Test, conducted by any of the NITs ,for admission in to their MCA programme. The MCA programme is offered by NITs at Agartala, Allahabad, Bhopal, Calicut, Durgapur, Jamshedpur, Kurukshetra, Raipur, Surathkal, Tiruchirappalli and Warangal .The admission into the MCA programme for the year 2018-19 in above 11 NITs is based on the Rank obtained in NIMCET-2018 only.
+        </p>
+        </div>
+        <!------------------------------------Icon Scalinng Bar------------------------------------->
+        <div id="scale_icon">
+            <img src="./images/NITT.jpg" alt="NIT Tiruchirappalli" class="ic" >
+            <img src="./images/NITC.jpg" alt="NIT Calicut" class="ic"  >
+            <img src="./images/NITK.png" alt="NIT Surathkal" class="ic"  >
+            <img src="./images/NITD.png" alt="NIT Durgapur" class="ic"  >
+            <img src="./images/MANIT.png" alt="NIT Bhopal" class="ic"  >
+            <img src="./images/NITJSR.png" alt="NIT Jamshedpur" class="ic"  >
+            <img src="./images/NITA.jpg" alt="NIT Agartala" class="ic"  >
+            <img src="./images/NITW.jpg" alt="NIT Warangal" class="ic"  >
+            <img src="./images/NITR.jpg" alt="NIT Raipur" class="ic"  >
+            <img src="./images/NITKKR.png" alt="NIT Kurukshetra" class="ic"  >
+            <img src="./images/MNIT.jpg" alt="NIT Allahabad" class="ic"  >
+
+        </div>
+        <!------------------------------------------------ Footer ----------------------------------------------------->
+        <footer>
+                <div>Copyright &copy; Department of Mathematical and Computational Sciences | NITK - 2018 | #1</div>
+        </footer>
+    </body>
+    <script>
+    function pwdshow()
+    {
+        if(document.getElementById("chk").checked)
+            pwd4.type="text";
+        else
+        pwd4.type="password";
+    }
+    document.getElementById("chk").addEventListener("click",pwdshow,false);
+    </script>
+</html>

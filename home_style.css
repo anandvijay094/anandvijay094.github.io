@@ -1,0 +1,264 @@
+
+*{
+    margin: 0;
+}
+body
+{
+/*background-color:#263A5A; #283C5F;*/
+}
+#top_bar
+{
+    background-color:#263A5A;
+    width: 100%;   
+    color: white;
+    font-weight: bold;
+}
+#top_bar span{
+    margin-left:8%;
+    font-size: 85%;
+    font-weight: bold;
+}
+/*#top_bar button{
+    outline: none;
+    border: none;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+}*/
+header{
+    background-color: #3f4f6d;
+    width:100%;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 10px;
+    box-sizing: border-box;
+}
+header p{
+    font-size: 18px;
+    font-weight: 300;
+    word-spacing: 10px;
+    letter-spacing:8px ;
+}
+header h1{
+    word-spacing: 15px;
+    letter-spacing:15px ;
+}
+#logo_bar{
+    background-color:#122b40;
+    width: 100%; 
+    color: white;
+    box-sizing: border-box;
+}
+img{
+    height: 100px;
+    width: 100px;
+}
+/*#logo_bar div{
+
+    float: left;
+    box-sizing: border-box;
+    text-align: center;  
+    padding-top: 5%;
+    background: red;
+}*/
+#pic{
+    float: left;
+    box-sizing: border-box;
+    text-align: center;  
+    padding-top: 5%;
+    /* Copied Stye */
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    font-size: 20px;
+    width: 30%;
+}
+#engl{
+    float: left;
+    box-sizing: border-box;
+    text-align: center;  
+    padding-top: 5%;
+       /* Copied Style */
+    font-weight: bolder;
+    font-size: 23px; 
+    margin-left: 3%;  
+    width: 32%;
+}
+
+#hind{
+    float: left;
+    box-sizing: border-box;
+    text-align: center;  
+    padding-top: 5%;
+    /* Copied Style */
+    font-weight: bolder;
+    font-size: 23px;
+    margin-right: 5%; 
+    width: 30%;
+}
+nav{
+    width: 100%;
+    background-image: linear-gradient(to right,#8a2387 , #e94057 , #f27121  , #e94057 , #8a2387  );
+    box-sizing: border-box;
+    text-align: center;
+}
+nav button{
+    outline: none;
+    border: none;
+    min-width: 10%;
+    color: white;
+    font-size: 16px;
+    background: none;
+    cursor: pointer;
+    padding: 1.4%;
+}
+nav button:hover{
+  background-color: rgba(84, 82, 94,0.7);
+}
+#notifi{
+    margin: auto;
+    margin-top: 1.5%;
+    width: 80%;
+    background-color:#212529;
+    text-align: left;
+    box-sizing: border-box;
+}
+#heading{
+    
+    color: #c7254e;
+    text-align: center;
+    font-size: 21px;
+    border-bottom: 1px solid black;
+    padding-top: 1%;
+    font-weight: bold;
+}
+#msg{
+    font-size: 90%;
+    padding: 2%;
+    line-height: 145%;
+    color: #caf813; 
+    text-align: justify;
+    word-spacing:4px;;
+}
+#container{
+width: 80%;
+margin: auto;
+margin-top: 3%;
+/*border: 2px solid green;*/
+box-sizing: border-box;
+}
+#container #lgn{
+    box-sizing: border-box;
+    border: 1px solid #31708f;
+    width:48%;
+    float:right;
+}
+
+input[type=password],[type=email],input[type=text]
+{
+    height:30;
+    width: 120%;
+    padding: 3%;
+}
+#lgbtn
+{
+    font-weight: 600;
+    color:white;
+    font-size: 14px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 2%;
+}
+#container #infrm{
+    box-sizing: border-box;
+    border: 1px solid #31708f;
+    
+    width:48%;
+    float: left;
+    position: relative;
+}
+#infrm_bar
+{
+    font-size:15px;
+    font-weight:lighter;
+    margin:3%;
+    padding: 2%;
+    box-sizing:border-box;
+    background-color:#ecf0f1;
+}
+#about{
+    position: relative;
+width: 80%;
+margin: auto;
+padding-left: 2%;
+margin-top: 5%;
+border-left : 5px solid #4cae4c;
+box-sizing: border-box;
+text-align: justify;
+}
+#about p{
+    line-height: 110%;
+}
+#scale_icon{
+    width: 60%;
+    margin: auto;
+    margin-top: 10%;
+    /*border: 2px solid;*/
+}
+.ic
+{
+    height: 9%;
+    width: 5%;
+    margin-left: 3%;
+    transition: transform 0.4s ease-out;
+    transition-delay: 0.01s;
+}
+.ic:hover{
+    transform: scale(2 , 1.7);
+    transform-origin: bottom;
+}
+footer{
+    width: 100%;
+    background-color: #122b40;
+    margin-top: 2%;
+    color: white;
+    font-size: 80%;
+    text-align: center;
+    padding: 0.6%;
+    box-sizing: border-box;
+}
+#reg
+{
+    margin: auto;
+    width: 50%;
+    border: 1px solid #31708f;
+    margin-top:3%;
+    background-color:#ecf0f1;
+}
+#reg table
+{
+    margin: auto;
+    text-align: right;
+}
+/*@media screen and (max-width: 800px) 
+{
+    #top_bar{
+        height: 2%;
+    }
+    nav{
+        height: 5%;
+    }
+    nav div{
+        width: 75%;
+    }
+    #notifi{
+        height: 15%;
+    }
+    #container{
+        height: 17%;
+    }
+    #about{
+        height: 8%;
+    }
+}*/
